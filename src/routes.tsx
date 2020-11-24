@@ -1,13 +1,14 @@
-import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import OrphanagesMap from './pages/OrphanagesMap'
-import OrphanageDetails from './pages/OrphanageDetails'
-import SelectMapPosition from './pages/CreateOrphanages/SelectMapPosition'
-import OrphanageData from './pages/CreateOrphanages/OrphanageData'
-import Header from './components/Header'
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import OrphanagesMap from './pages/OrphanagesMap';
+import OrphanageDetails from './pages/OrphanageDetails';
+import SelectMapPosition from './pages/CreateOrphanages/SelectMapPosition';
+import OrphanageData from './pages/CreateOrphanages/OrphanageData';
+import Header from './components/Header';
+import Login from './pages/login/Login';
 
-const { Navigator, Screen } = createStackNavigator()
+const { Navigator, Screen } = createStackNavigator();
 
 export default function Routes() {
     return (
@@ -42,6 +43,11 @@ export default function Routes() {
                         headerShown: true,
                         header: () => <Header title="Informe os dados" />
                     }}  
+                />
+                <Screen 
+                    name="Login" 
+                    component={Login}
+                      
                 />
             </Navigator>
         </NavigationContainer>

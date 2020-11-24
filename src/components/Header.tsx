@@ -38,18 +38,18 @@ export default function Header({ title, showCancel = true }: HeaderProps) {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 24,
+        padding: 20,
         backgroundColor: '#f9fafc',
         borderBottomWidth: 1,
         borderColor: '#dde3f0',
-        paddingTop: 44,
+        paddingTop: 60,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
     },
     title: {
         fontFamily: 'Nunito_600SemiBold',
-        color: '#8fa7b3',
+        color: '#15b6d6',
         fontSize: 16
     }
 })
