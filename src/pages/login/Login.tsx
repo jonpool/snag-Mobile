@@ -1,22 +1,60 @@
-import React from 'react';
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import React, { useState, useContext } from 'react';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image } from 'react-native';
+import  authContext  from '../../contexts/authContext';
+import { useNavigation } from '@react-navigation/native';
+import logo from '../../images/logo.png';
+const user={
+  
+  email: '',
+  password: '',
+};
 
-export default class Login extends React.Component {
-  state={
-    email:"",
-    password:""
+
+
+export default function() {
+  
+  const navigation = useNavigation();
+  const { signed,signIn } = useContext(authContext);
+  const { signedOut,signOut } = useContext(authContext);
+  const [email, setEmail] = useState("");
+  const [pw, setPw] = useState("");
+  console.log(signed);
+
+  user.email = email;
+  user.password= pw;
+  
+  async function handleSignIn()
+  {
+    if(user.email===''|| user.password ===''){
+      alert('The field email and password can`t be blank');
+      return;
+    }
+    signIn(user);
+    console.log(user);
+    if (signed === true) {
+      navigation.navigate('SelectMapPosition');
+    }
   }
 
-  render(){
-     return (
-          <View style={styles.container}>
-            <Text style={styles.logo}>HeyAPP</Text>
-            <View style={styles.inputView} >
+  async function handleSignOut()
+  {
+    signOut();
+  }
+  async function handleSignUp()
+  {
+    navigation.navigate('SignUp');
+  }
+
+  return (
+      <View style={styles.container}>
+            <Image source={logo}/>
+            <View style={styles.inputView}>
               <TextInput  
                 style={styles.inputText}
                 placeholder="Email..." 
                 placeholderTextColor="#ffffff"
-                onChangeText={text => this.setState({email:text})}/>
+                value={email}
+                onChangeText={setEmail}/>
             </View>
             <View style={styles.inputView} >
               <TextInput  
@@ -24,25 +62,24 @@ export default class Login extends React.Component {
                 style={styles.inputText}
                 placeholder="Password..." 
                 placeholderTextColor="#ffffff"
-                onChangeText={text => this.setState({password:text})}/>
+                value={pw}
+                onChangeText={setPw}/>
             </View>
             <TouchableOpacity>
               <Text style={styles.forgot}>Forgot Password?</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.loginBtn}>
-              <Text style={styles.loginText}>LOGIN</Text>
+              <Text style={styles.loginText} onPress={()=>{handleSignIn()}}>LOGIN</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Text style={styles.signUpText}>Signup</Text>
+              <Text style={styles.signUpText}onPress={()=>{handleSignUp()}}>Signup</Text>
             </TouchableOpacity>
     
-      
-          </View>
-        );
-      }
-    }
+      </View>);
+} 
     
-    const styles = StyleSheet.create({
+const styles = StyleSheet.create
+ ({
       container: {
         flex: 1,
         backgroundColor: '#f2f3f5',
@@ -57,7 +94,7 @@ export default class Login extends React.Component {
       },
       inputView:{
         width:"80%",
-        backgroundColor:"#15c3d6",
+        backgroundColor:'#371a46',
         borderRadius:25,
         height:50,
         marginBottom:20,
@@ -74,7 +111,7 @@ export default class Login extends React.Component {
       },
       loginBtn:{
         width:"80%",
-        backgroundColor:"#39CC83",
+        backgroundColor:"#fba035",
         borderRadius:25,
         height:50,
         alignItems:"center",
@@ -89,4 +126,4 @@ export default class Login extends React.Component {
         color:"#000000"
       }
 
-});
+  });

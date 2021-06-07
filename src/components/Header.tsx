@@ -14,7 +14,7 @@ export default function Header({ title, showCancel = true }: HeaderProps) {
     const navigation = useNavigation();
 
     function handleGoBackToAppHomepage() {
-        navigation.navigate('OrphanagesMap')
+        navigation.navigate('ProductsMap')
     }
 
     return (
@@ -38,18 +38,19 @@ export default function Header({ title, showCancel = true }: HeaderProps) {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
+        padding: 10,
         backgroundColor: '#f9fafc',
         borderBottomWidth: 1,
         borderColor: '#dde3f0',
         paddingTop: 60,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        height: 110,
     },
     title: {
         fontFamily: 'Nunito_600SemiBold',
         color: '#15b6d6',
-        fontSize: 16
+        fontSize: 15
     }
 })

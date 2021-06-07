@@ -1,29 +1,36 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import OrphanagesMap from './pages/OrphanagesMap';
-import OrphanageDetails from './pages/OrphanageDetails';
-import SelectMapPosition from './pages/CreateOrphanages/SelectMapPosition';
-import OrphanageData from './pages/CreateOrphanages/OrphanageData';
+import ProductsMap from './pages/ProductsMap';
+import ProductDetails from './pages/ProductDetails';
+import SelectMapPosition from './pages/CreateProduct/SelectMapPosition';
+import CreateProduct from './pages/CreateProduct/CreateProduct';
 import Header from './components/Header';
+import HeaderProfile from './components/HeaderProfile';
 import Login from './pages/login/Login';
+import SignUp from './pages/login/SignUp';
+import Profile from './pages/User/profile';
 
 const { Navigator, Screen } = createStackNavigator();
+import { AuthProvider } from './contexts/authContext';
+
 
 export default function Routes() {
-    return (
+    return (    
+        
         <NavigationContainer>
+            <AuthProvider>
             <Navigator screenOptions={{headerShown: false, cardStyle: { backgroundColor: '#f2f3f5' } }}  >
-                <Screen name="OrphanagesMap" 
-                        component={OrphanagesMap} 
+                <Screen name="ProductsMap" 
+                        component={ProductsMap} 
                 />
 
                 <Screen 
-                    name="OrphanageDetails" 
-                    component={OrphanageDetails}
+                    name="ProductDetails" 
+                    component={ProductDetails}
                     options={{
                         headerShown: true,
-                        header: () => <Header showCancel={false} title="Orfanato" />
+                        header: () => <Header showCancel={false} title="Product" />
                     }} 
                 />
 
@@ -32,16 +39,16 @@ export default function Routes() {
                     component={SelectMapPosition}
                     options={{
                         headerShown: true,
-                        header: () => <Header title="Selecione no mapa" />
+                        header: () => <Header title="Select on the map." />
                     }}  
                 />
 
                 <Screen 
-                    name="OrphanageData" 
-                    component={OrphanageData}
+                    name="CreateProduct" 
+                    component={CreateProduct}
                     options={{
                         headerShown: true,
-                        header: () => <Header title="Informe os dados" />
+                        header: () => <Header title="Fill out the form." />
                     }}  
                 />
                 <Screen 
@@ -49,7 +56,23 @@ export default function Routes() {
                     component={Login}
                       
                 />
+                <Screen 
+                    name="SignUp" 
+                    component={SignUp}
+                      
+                />
+                <Screen 
+                    name="Profile" 
+                    component={Profile}
+                    options={{
+                        headerShown: true,
+                        header: () => <HeaderProfile title="Profile" />
+                    }} 
+                      
+                />
             </Navigator>
+            </AuthProvider>
         </NavigationContainer>
+        
     )
 }

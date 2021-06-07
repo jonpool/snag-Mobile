@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "SnagApp",
+    "slug": "SangApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
