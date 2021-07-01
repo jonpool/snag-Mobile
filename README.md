@@ -44,4 +44,4 @@ Snag uses a number of open source projects to work properly:
 #Splash Screen
 
 
-[![N|Solid](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7346.jpg)]
+[!(http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7346-1.jpg)]
