@@ -30,5 +30,18 @@ Install the dependencies and devDependencies and start the server.
 npm install
 npm start
 ```
+# Tech
 
-[![N|Solid](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7357.png)](https://nodesource.com/products/nsolid)
+Snag uses a number of open source projects to work properly:
+
+- [React Native] - Compile for android and ios with react native
+- [babel] - Babel is a JavaScript compiler..
+- [Expo - Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
+- [node.js] - evented I/O for the backend
+- [Express] - fast node.js network app framework [@tjholowaychuk]
+
+## Screenshots
+#Splash Screen
+
+
+[![N|Solid](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7346.jpg)]
