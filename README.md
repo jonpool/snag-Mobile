@@ -61,9 +61,16 @@ Snag uses a number of open source projects to work properly:
 #Select Point on the mapScreen
 
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7351-1.png)](https://inforprize.com)
-[![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7352-1.png)
+[![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7352-1.png)](https://inforprize.com)
 
 
 #Screen for posting photos and registering product information
 
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7354-1.png)](https://inforprize.com)
+[![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7353-1.png)](https://inforprize.com)
+
+#Published Product Screen
+[![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7355-1.png)](https://inforprize.com)
+
+#User Profile Screen
+[![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7357-1.png)](https://inforprize.com)
