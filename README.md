@@ -39,6 +39,7 @@ Snag uses a number of open source projects to work properly:
 - [Expo - Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
+- [TypeScript] - is an open-source language which builds on JavaScript, one of the world's most used tools
 
 ## Screenshots
 #Splash Screen
