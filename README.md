@@ -1,4 +1,4 @@
-# Snag-Mobile
+# Snag-App
 
 ## This app will help you to find free stuf on the street and save the enviroment! 
 
