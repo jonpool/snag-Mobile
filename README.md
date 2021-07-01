@@ -4,9 +4,9 @@
 
 [![N|Solid](https://www.inforprize.com/wp-content/uploads/2018/04/logoSmall-e1583266011737.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Dillinger is a cloud-enabled, mobile-ready, react native free products finder.
+
+Snag is a cloud-enabled, mobile-ready, react native free products finder.
 
 - Languages utilized
 - Node (Backend)
