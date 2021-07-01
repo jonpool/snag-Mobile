@@ -6,12 +6,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+Dillinger is a cloud-enabled, mobile-ready, react native free products finder.
 
 - Languages utilized
-- Node
-- React Native
+- Node (Backend)
+- React Native (Front-end)
 
 ## Features
 
@@ -20,5 +19,16 @@ AngularJS-powered HTML5 Markdown editor.
 - Keep the list of products you published.
 - Help the enviroment saving something really good that was going to trash!
 - Share products with your friends. 
+
+## Installation
+
+Snag requires [Node.js](https://nodejs.org/) v10+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+npm install
+npm start
+```
 
 [![N|Solid](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7357.png)](https://nodesource.com/products/nsolid)
