@@ -70,7 +70,9 @@ Snag uses a number of open source projects to work properly:
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7353-1.png)](https://inforprize.com)
 
 #Published Product Screen
+
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7355-1.png)](https://inforprize.com)
 
 #User Profile Screen
+
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7357-1.png)](https://inforprize.com)
