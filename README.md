@@ -1,2 +1,24 @@
-# snag-Mobile
+# Snag-Mobile
+
+## This app will help you to find free stuf on the street and save the enviroment! 
+
+[![N|Solid](https://www.inforprize.com/wp-content/uploads/2018/04/logoSmall-e1583266011737.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
+AngularJS-powered HTML5 Markdown editor.
+
+- Languages utilized
+- Node
+- React Native
+
+## Features
+
+- Find products on the map.
+- Publish products that you want to donate
+- Keep the list of products you published.
+- Help the enviroment saving something really good that was going to trash!
+- Share products with your friends. 
+
 [![N|Solid](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7357.png)](https://nodesource.com/products/nsolid)
