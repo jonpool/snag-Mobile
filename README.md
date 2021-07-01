@@ -46,4 +46,5 @@ Snag uses a number of open source projects to work properly:
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7346-1.jpg)](https://inforprize.com)
 
 #Map Screen
+
 [![Inforprize](http://www.inforprize.com/wp-content/uploads/2021/07/IMG_7347-1.png)](https://inforprize.com)
